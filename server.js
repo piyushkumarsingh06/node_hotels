@@ -19,3 +19,7 @@ app.use('/candidate', candidateRoutes);
 app.listen(PORT, ()=>{
     console.log('listening on port 3000');
 })
+
+app.get('/', (req, res) => {
+    res.send('Server is live');
+});
